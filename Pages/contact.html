@@ -21,72 +21,18 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand rounded p-2" href="/pages/index.html">Event Center</a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand ps-5 mx-5 fs-1" href="/Pages/index.html">District 142</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active rounded left"
-                  aria-current="page"
-                  href="/Pages/index.html"
-                  >Home</a
-                >
-              </li>
-
-              <li class="nav-item dropdown ">
-                <a
-                  class="nav-link dropdown-toggle rounded left"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item " href="/Pages/events.html"
-                      >Events</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item " href="/Pages/menu.html">Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item " href="/Pages/contact.html"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link px-3 fs-3 text-white ms-3" aria-current="page" href="/Pages/events.html">Events</a>
+              <a class="nav-link px-3 fs-3 text-white" href="/Pages/menu.html">Menu</a>
+              <a class="nav-link px-3 fs-3 text-white" href="/Pages/contact.html">Contact</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -94,27 +40,28 @@
 
 
     <main>
+
       <div class="container mt-5">
         <h2 class="my-3 text-center">Question? Concerns?<br>Submit the form below and one of our staff members will be in touch ASAP!</h2>
-        <form></form>
+        <form action="submit.php" method="post">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" class="form-control" id="name" required>
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div>
-            <label for="message" class="form-label">Message:</label>
+            <label for="message" class="form-label">Message</label>
             <textarea id="message" class="form-control mb-3"></textarea>
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Subscribe to monthly Newsletter!</label>
           </div>
-          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" class="btn btn-success" onclick="thanks()">Submit</button>
         </form>
       </div>
     </main>
@@ -137,6 +84,6 @@
     ></script>
 
     <!---CUSTOM JAVASCRIPT-->
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

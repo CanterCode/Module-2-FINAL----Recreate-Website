@@ -21,125 +21,168 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand rounded p-2" href="/pages/index.html">Event Center</a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand ps-5 mx-5 fs-1" href="/Pages/index.html">District 142</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active rounded left"
-                  aria-current="page"
-                  href="/Pages/index.html"
-                  >Home</a
-                >
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle rounded left"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item " href="/Pages/events.html"
-                      >Events</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item " href="/Pages/menu.html">Menu</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item " href="/Pages/contact.html"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link px-3 fs-3 text-white ms-3" aria-current="page" href="/Pages/events.html">Events</a>
+              <a class="nav-link px-3 fs-3 text-white" href="/Pages/menu.html">Menu</a>
+              <a class="nav-link px-3 fs-3 text-white" href="/Pages/contact.html">Contact</a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main class="background">
 
-    <!--CAROUSEL SECTION-->
-
-      <section>
-        <div class="container pt-5">
-          <h1 class="pb-3 text-center"><strong>Recent Events</strong></h1>
-          <div id="carouselExampleCaptions" class="carousel slide pb-5">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!---CARD SECTION-->
+      
+  <section>
+    <div class="container my-5">
+        <div class="row g-0 align-items-stretch">
+            <div class="col-12">
+                <div class="card h-100 rounded shadow">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                            <img class="img-fluid rounded-top w-100 brown" src="/Images/pexels-pixabay-band 1.jpg" alt="Basketball Game"/>
+                        </div>
+                        <div class="col-5 card-body-title text-left ps-5">
+                          <h2 class="brown title-smaller"><strong>Wild Side - A Mötley Crüe Tribute</strong></h2>
+                        </div>
+                        <div class="col-3 card-body text-center">
+                          <h4 class="brown card-text date-smaller">Saturday, March 15th<br>Doors at 7:00</h4>
+                        </div>
+                        <div class="col-2 text-center h-100 column-learn">
+                            <a href="/Pages/contact.html" class="card-button-learn w-100 p-0"><strong>Learn More</strong></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/Images/pexels-lumierestudiomx-974502.jpg" class="d-block w-100" alt="basketball game">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5><strong>Basketball Championship</strong></h5>
-                  <p><strong>The Stars beat the Panthers in a thrilling championship series.</strong></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/Images/pexels-pixabay-164693.jpg" class="d-block w-100" alt="rock concert">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5><strong>Rock Concert</strong></h5>
-                  <p><strong>An incredible show by one of the most popoular rock bands!</strong></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/Images/pexels-cottonbro-7097455.jpg" class="d-block w-100" alt="orchestra performance">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5><strong>Orchestra Performance</strong></h5>
-                  <p><strong>Beautiful music by the talented Philharmonic Orchestra.</strong></p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
         </div>
-      </section>
+    </div>
 
+    <div class="container my-5">
+      <div class="row g-0 align-items-stretch">
+          <div class="col-12">
+              <div class="card h-100 rounded shadow">
+                  <div class="row g-0 align-items-center">
+                      <div class="col-2">
+                          <img class="img-fluid rounded-top w-100 brown" src="/Images/pexels-pixabay-band 1.jpg" alt="Basketball Game"/>
+                      </div>
+                      <div class="col-5 card-body-title text-left ps-5">
+                        <h2 class="brown title-smaller"><strong>Wild Side - A Mötley Crüe Tribute</strong></h2>
+                      </div>
+                      <div class="col-3 card-body text-center">
+                        <h4 class="brown card-text date-smaller">Saturday, March 15th<br>Doors at 7:00</h4>
+                      </div>
+                      <div class="col-2 text-center h-100 column-learn">
+                          <a href="/Pages/contact.html" class="card-button-learn w-100 p-0"><strong>Learn More</strong></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row g-0 align-items-stretch">
+        <div class="col-12">
+            <div class="card h-100 rounded shadow">
+                <div class="row g-0 align-items-center">
+                    <div class="col-2">
+                        <img class="img-fluid rounded-top w-100 brown" src="/Images/pexels-pixabay-band 1.jpg" alt="Basketball Game"/>
+                    </div>
+                    <div class="col-5 card-body-title text-left ps-5">
+                      <h2 class="brown title-smaller"><strong>Wild Side - A Mötley Crüe Tribute</strong></h2>
+                    </div>
+                    <div class="col-3 card-body text-center">
+                      <h4 class="brown card-text date-smaller">Saturday, March 15th<br>Doors at 7:00</h4>
+                    </div>
+                    <div class="col-2 text-center h-100 column-learn">
+                        <a href="/Pages/contact.html" class="card-button-learn w-100 p-0"><strong>Learn More</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+  <div class="row g-0 align-items-stretch">
+      <div class="col-12">
+          <div class="card h-100 rounded shadow">
+              <div class="row g-0 align-items-center">
+                  <div class="col-2">
+                      <img class="img-fluid rounded-top w-100 brown" src="/Images/pexels-pixabay-band 1.jpg" alt="Basketball Game"/>
+                  </div>
+                  <div class="col-5 card-body-title text-left ps-5">
+                    <h2 class="brown title-smaller"><strong>Wild Side - A Mötley Crüe Tribute</strong></h2>
+                  </div>
+                  <div class="col-3 card-body text-center">
+                    <h4 class="brown card-text date-smaller">Saturday, March 15th<br>Doors at 7:00</h4>
+                  </div>
+                  <div class="col-2 text-center h-100 column-learn">
+                      <a href="/Pages/contact.html" class="card-button-learn w-100 p-0"><strong>Learn More</strong></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row g-0 align-items-stretch">
+      <div class="col-12">
+          <div class="card h-100 rounded shadow">
+              <div class="row g-0 align-items-center">
+                  <div class="col-2">
+                      <img class="img-fluid rounded-top w-100 brown" src="/Images/pexels-pixabay-band 1.jpg" alt="Basketball Game"/>
+                  </div>
+                  <div class="col-5 card-body-title text-left ps-5">
+                    <h2 class="brown title-smaller"><strong>Wild Side - A Mötley Crüe Tribute</strong></h2>
+                  </div>
+                  <div class="col-3 card-body text-center">
+                    <h4 class="brown card-text date-smaller">Saturday, March 15th<br>Doors at 7:00</h4>
+                  </div>
+                  <div class="col-2 text-center h-100 column-learn">
+                      <a href="/Pages/contact.html" class="card-button-learn w-100 p-0"><strong>Learn More</strong></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row g-0 align-items-stretch">
+      <div class="col-12">
+          <div class="card h-100 rounded shadow">
+              <div class="row g-0 align-items-center">
+                  <div class="col-2">
+                      <img class="img-fluid rounded-top w-100 brown" src="/Images/pexels-pixabay-band 1.jpg" alt="Basketball Game"/>
+                  </div>
+                  <div class="col-5 card-body-title text-left ps-5">
+                    <h2 class="brown title-smaller"><strong>Wild Side - A Mötley Crüe Tribute</strong></h2>
+                  </div>
+                  <div class="col-3 card-body text-center">
+                    <h4 class="brown card-text date-smaller">Saturday, March 15th<br>Doors at 7:00</h4>
+                  </div>
+                  <div class="col-2 text-center h-100 column-learn">
+                      <a href="/Pages/contact.html" class="card-button-learn w-100 p-0"><strong>Learn More</strong></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+  
     </main>
 
     <footer>
@@ -159,6 +202,6 @@
     ></script>
 
     <!---CUSTOM JAVASCRIPT-->
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
