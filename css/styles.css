@@ -1,6 +1,6 @@
 body {
     font-family: "Yeseva One";
-    background-color: white;
+    background-color: #212529;
     color: black;
     min-height: 100vh;
     display: flex;
@@ -9,6 +9,7 @@ body {
 
 main {
     flex: 1;
+    margin-top: 75px;
 }
 
 
@@ -69,34 +70,29 @@ footer p {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+table {
+    width: auto !important;
+    border: 1px solid rgb(194, 122, 74) !important;
+}
+
+.table-group-divider {
+    color: rgb(194, 122, 74) !important;
+}
+
 th, .price {
     text-align: center;
 }
 
-.item {
-    font-size: 1.75rem;
-}
-
 th {
-    font-size: 1.5rem;
+    font-size: 32px;
+    color: black;
+    background-color: rgb(252, 228, 212) !important;
 }
 
 td {
-    font-size: 1.2rem;
-}
-
-@media (max-width: 850px){
-    .item {
-        font-size: .85rem
-    }
-
-    th {
-        font-size: .8rem
-    }
-
-    td {
-        font-size: .75rem
-    }
+    font-size: 24px;
+    color: black;
+    background-color: rgb(252, 228, 212) !important;
 }
 
 .carousel-section,
@@ -115,8 +111,6 @@ td {
     height: 100vh;
     object-fit: cover;
     filter: blur(2px);
-    mix-blend-mode: multiply;
-    opacity: .8;
 }
 
 .container-fluid {
@@ -127,6 +121,24 @@ td {
 
 .carousel-item {
     background-color: rgba(0, 0, 0, 0.726);
+}
+
+.carousel-button {
+    border: 5px solid white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(163, 148, 15, 0.795), rgb(0, 0, 0));
+    mix-blend-mode: overlay;
 }
 
 .hiring {
@@ -152,12 +164,20 @@ td {
 }
 
 .hiring-button {
-    color: rgb(44, 44, 44);
-    background-color: white;
-    width: 100px;
-    height: 7dvh;
+    color: white;
+    background-color: #212529;
+    width: auto;
+    height: auto;
     font-size: 24px;
     margin-bottom: 100px;
+    padding: 20px;
+    border: 5px solid rgb(194, 122, 74);
+}
+
+.hiring-button:hover {
+    background: white;
+    color: black;
+    border: 5px solid rgb(194, 122, 74);
 }
 
 .background {
@@ -189,6 +209,19 @@ td {
     padding-bottom: 10px;
 }
 
+form {
+    background-color: rgb(252, 228, 212);
+    border: 5px solid rgb(194, 122, 74);
+    border-radius: 40px !important;
+}
+
+.button-submit {
+    background-color: rgb(194, 122, 74);
+    color: white;
+    width: 15%;
+    font-size: 24px;
+}
+
 @media (max-width: 780px) {
     .title-smaller {
         font-size: 1.2rem;
@@ -200,5 +233,22 @@ td {
 
     .card-button-learn {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 994px) {
+    .column-learn {
+        display: none;
+    }
+    .card-body h4 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-body-title h2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 26px
     }
 }
