@@ -46,3 +46,7 @@ if (age >= 18) {
 } else {
     console.log("You must be 18 or older to attend any events at District 142.")
 }
+
+/*
+This function checks the customers age. If they are 18 and up it displays a message. If not, it displays a different message.
+*/
