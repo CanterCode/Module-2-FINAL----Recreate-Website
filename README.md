@@ -4,7 +4,7 @@
 
 The website that I recreated was [District 142 Concert Venue](https://district142live.com/). It's an event center located in Wyandotte, MI. I liked the style of their website and thought that it was just challenging enough without being too overly complicated.
 
-### Boostrap
+### Bootstrap
 
 I used Bootstrap components throughout the whole website. However, the 3 components that I would like to highlight are the carousel, the cards, and modal. I used these because the original website did and so I thought I could recreate it best with these components. The carousel is on the home page. The cards are used in the events tab. And the modal is the hiring button on the home page.
 
